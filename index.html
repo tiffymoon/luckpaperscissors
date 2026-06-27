@@ -7,26 +7,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
+
+
 <body>
 
   <!-- NAV -->
   <nav>
-    <a class="nav-logo" href="#hero">Luck <span>Paper</span> Scissors</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#collection">Collection</a></li>
-      <!-- <li><a href="#shop">Shop</a></li> -->
-      <li><a href="#stockists">Stockists</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <a class="nav-logo" href="#hero">
+  <img src="images/LPS-logo.png" alt="Luck Paper Scissors" class="nav-logo-img" />
+</a>
+  <button class="nav-toggle" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  
+</nav>
+
+<ul class="nav-links">
+  <button class="nav-close-btn" aria-label="Close menu">✕</button>
+  <li><a href="#about" class="nav-close">About</a></li>
+  <li><a href="#collection" class="nav-close">Collection</a></li>
+  <li><a href="#stockists" class="nav-close">Stockists</a></li>
+  <li><a href="#contact" class="nav-close">Contact</a></li>
+</ul>
 
   <!-- HERO -->
   <section id="hero">
     <div class="hero-left">
       <!-- <p class="hero-overline">Origami Art &amp; Jewellery · Berlin</p> -->
-      <h1 class="hero-title"><span style="text-transform: uppercase;">Luck<br>Paper<br>Scissors</span></h1>
-      <p class="hero-sub">Handcrafted origami wall art and wearable paper jewellery. Where geometry meets the everyday.</p>
+      <h1 class="hero-title">Handcrafted origami wall art and wearable paper accessories.</h1>
+      <p class="hero-sub">Where geometry meets the everyday. Made in Berlin.</p>
       <div class="hero-actions">
         <a href="#collection" class="btn-primary">View Collection</a>
         <!-- <a href="#shop" class="btn-ghost">Shop Now</a> -->
@@ -62,35 +74,75 @@
         <h2 class="section-title">Collection</h2>
       </div>
     </div>
-    <div class="collection-grid">
-      <div class="collection-item reveal">
-        <div class="collection-img">
-          <img src="images/salit.png">
-        </div>
-        <div class="collection-info">
-          <p class="collection-category">Wall Art</p>
-          <p class="collection-name">Piece 01 — Salit</p>
-        </div>
-      </div>
-      <div class="collection-item reveal reveal-delay-1">
-        <div class="collection-img">
-          <img src="images/ruweda.png">
-        </div>
-        <div class="collection-info">
-          <p class="collection-category">Wall Art</p>
-          <p class="collection-name">Piece 02 — Ruweda in Green and Blue</p>
-        </div>
-      </div>
-      <div class="collection-item reveal reveal-delay-2">
-        <div class="collection-img">
-          <img src="images/walingwaling-bookmark.jpg">
-        </div>
-        <div class="collection-info">
-          <p class="collection-category">Accessories</p>
-          <p class="collection-name">Waling Waling Bookmark</p>
-        </div>
-      </div>
+  <div class="collection-grid">
+
+  <!-- GROUP 1 -->
+  <div class="collection-item reveal">
+    <div class="collection-img"><img src="images/salit.png"></div>
+    <div class="collection-info">
+      <p class="collection-category">Wall Art</p>
+      <p class="collection-name">Salit | 13 x 18 cm</p>
     </div>
+  </div>
+
+  <div class="collection-item reveal reveal-delay-1">
+    <div class="collection-img"><img src="images/ruweda.png"></div>
+    <div class="collection-info">
+      <p class="collection-category">Wall Art</p>
+      <p class="collection-name">Ruweda | 20 x 20 cm</p>
+    </div>
+  </div>
+
+  <div class="collection-item reveal reveal-delay-2">
+    <div class="collection-img"><img src="images/walingwaling-bookmark.jpg"></div>
+    <div class="collection-info">
+      <p class="collection-category">Stationery</p>
+      <p class="collection-name">Waling Waling Bookmark</p>
+    </div>
+  </div>
+
+  <div class="collection-item reveal reveal-delay-3">
+    <div class="collection-img"><img src="images/earrings-sonobe12.png"></div>
+    <div class="collection-info">
+      <p class="collection-category">Accessories</p>
+      <p class="collection-name">Sonobe Ball Earrings</p>
+    </div>
+  </div>
+
+  <!-- GROUP 2 -->
+  <div class="collection-item reveal">
+    <div class="collection-img"><img src="images/earrings-walingwaling.png"></div>
+    <div class="collection-info">
+      <p class="collection-category">Accessories</p>
+      <p class="collection-name">Waling Waling Earrings</p>
+    </div>
+  </div>
+
+  <div class="collection-item reveal reveal-delay-1">
+    <div class="collection-img"><img src="images/earrings-lily.png"></div>
+    <div class="collection-info">
+      <p class="collection-category">Accessories</p>
+      <p class="collection-name">Lily Earrings</p>
+    </div>
+  </div>
+
+  <div class="collection-item reveal reveal-delay-2">
+    <div class="collection-img"><img src="images/walingwaling.png"></div>
+    <div class="collection-info">
+      <p class="collection-category">Wall Art</p>
+      <p class="collection-name">Waling Waling | 13 x 18 cm</p>
+    </div>
+  </div>
+
+  <div class="collection-item reveal reveal-delay-3">
+    <div class="collection-img"><img src="images/sonobe-12-kit.png"></div>
+    <div class="collection-info">
+      <p class="collection-category">Stationery</p>
+      <p class="collection-name">Coming Soon: Modular Origami Kit</p>
+    </div>
+  </div>
+
+</div>
   </section>
 
   <!-- SHOP
@@ -173,14 +225,35 @@
   </footer>
 
   <script>
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.08 });
-    reveals.forEach(el => observer.observe(el));
-  </script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.08 });
+  reveals.forEach(el => observer.observe(el));
+
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('active');
+    links.classList.toggle('open');
+  });
+
+  document.querySelector('.nav-close-btn').addEventListener('click', () => {
+    toggle.classList.remove('active');
+    links.classList.remove('open');
+  });
+
+  document.querySelectorAll('.nav-close').forEach(link => {
+    link.addEventListener('click', () => {
+      toggle.classList.remove('active');
+      links.classList.remove('open');
+    });
+  });
+</script>
+
 
 </body>
 </html>
