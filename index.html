@@ -252,6 +252,51 @@
       links.classList.remove('open');
     });
   });
+
+
+</script>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close">✕</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+</div>
+
+<script>
+  // Lightbox
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+document.querySelectorAll('.collection-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const img = item.querySelector('.collection-img img');
+    if (img) {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+  });
+});
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target !== lightboxImg) {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+});
+
+document.querySelector('.lightbox-close').addEventListener('click', () => {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+});
 </script>
 
 
